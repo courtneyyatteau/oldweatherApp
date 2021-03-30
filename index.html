@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://kit.fontawesome.com/ae81c1475a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mt-3 container">
+        <div class="mb-2 row justify-content-center search">
+            <input class="col-auto search-bar" type="text" placeholder="Enter Zip Code or City" name="search">
+            <button class="search-symbol col-auto" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="weather-container">
+            <div>
+                <h1 class="city">Alexandria, VA
+                    <button type="button" class="btn btn-outline-primary hourly">Hourly</button>
+                </h1>
+                
+            </div>
+            
+            <h2>10:00am<br/>Today | Sun - 3/28</h2>
+
+            <div class="row justify-content-center today-forecast">
+                <div class="card col-sm-auto temp-info">
+                    <h1 class="card-title text-nowrap temp">59°F<button class="btn btn-outline-secondary cel-btn">°C</button></h1>
+                    <div class="card-body text-nowrap real-feal">Feels like 52°F</div>
+                </div>
+                <div class="card col-sm-auto img-text-combo">
+                    <i class="fas fa-cloud currImage"><br/><p class="wthr-info">Cloudy</p></i>
+                </div>
+            </div>
+
+            <div class="mt-5 row justify-content-center box-info">
+                <div class="col-sm-auto">
+                    <div class="card infoCard">
+                        <div class="card-body text-nowrap px-2">
+                            Precipitation: 10%
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="card infoCard">
+                        <div class="card-body text-nowrap px-2">
+                            Wind: 15%
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="card infoCard">
+                        <div class="card-body text-nowrap px-2">
+                            Humidity: 51%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 row">
+                    <div class="card five-day">
+                        <div class="card-title five-title mt-1">5-Day Forecast</div>
+                        <div class="mt-1 mb-2 row justify-content-evenly">
+                            <div class="col-sm-6 col-md-2 card">
+                                <div class="card-body text-nowrap">
+                                <div class="card-title">Mon</div>
+                                    <i>🌧️</i>
+                                    <div class="card-text">61°F/42°F</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 card">
+                                <div class="card-body text-nowrap">
+                                <div class="card-title">Tues</div>
+                                    <i>⛈️</i>
+                                    <div class="card-text">58°F/48°F</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 card">
+                                <div class="card-body text-nowrap">
+                                <div class="card-title">Wed</div>
+                                    <i>⛅</i>
+                                    <div class="card-text">65°F/49°F</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 card">
+                                <div class="card-body text-nowrap">
+                                <div class="card-title">Thurs</div>
+                                    <i>🌤️</i>
+                                    <div class="card-text">69°F/51°F</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 card">
+                                <div class="card-body text-nowrap">
+                                <div class="card-title">Fri</div>
+                                    <i>🌦️</i>
+                                    <div class="card-text">65°F/47°F</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
